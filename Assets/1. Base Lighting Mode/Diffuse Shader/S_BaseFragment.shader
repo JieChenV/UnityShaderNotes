@@ -24,7 +24,7 @@ Shader "ShaderNotes/LightMode/S_BaseFragment"
             struct appdata
             {
                 float4 vertex : POSITION;
-                float2 normal : NORMAL;
+                float3 normal : NORMAL;
             };
 
             struct v2f
