@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: S_SpecularFragmentBlinn
-  m_Shader: {fileID: 4800000, guid: 5b4c73db65d424a0ab6ed98c971a0cad, type: 3}
+  m_Name: BaseFragment
+  m_Shader: {fileID: 4800000, guid: 9a2b329b13b504f2cbb243a2ca1e0477, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,9 +19,7 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
-    m_Floats:
-    - _Gloss: 20
+    m_Floats: []
     m_Colors:
     - _Diffuse: {r: 0.9254902, g: 0.3372549, b: 0.30980393, a: 1}
-    - _Specular: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

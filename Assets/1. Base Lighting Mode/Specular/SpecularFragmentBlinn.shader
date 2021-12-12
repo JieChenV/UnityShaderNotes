@@ -1,7 +1,7 @@
 // Phong Mode
 
 
-Shader "ShaderNotes/LightMode/S_SpecularFragment"
+Shader "ShaderNotes/LightMode/SpecularFragmentBlinn"
 {
    Properties
     {
@@ -67,8 +67,10 @@ Shader "ShaderNotes/LightMode/S_SpecularFragment"
                 fixed3 reflectDir = normalize(reflect(_WorldSpaceCameraPos.xyz, i.worldNormal.xyz));
                 // Get the view direction in world space
                 fixed3 viewDir = normalize(_WorldSpaceCameraPos.xyz - i.worldPos.xyz);
+                // get the half direction in world space
+                fixed3 halfDir = normalize(worldLightDir + viewDir);
                 // compute specular term
-                fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(saturate(dot(reflectDir, viewDir)), _Gloss);
+                fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(saturate(dot(worldNormal, halfDir)), _Gloss);
 
                 float3 color = ambient + diffuse + specular;
 

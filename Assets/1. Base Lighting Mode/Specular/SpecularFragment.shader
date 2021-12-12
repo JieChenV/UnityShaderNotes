@@ -1,14 +1,13 @@
 // Phong Mode
 
 
-Shader "ShaderNotes/Texture/S_SingleTexture"
+Shader "ShaderNotes/LightMode/SpecularFragment"
 {
    Properties
     {
-        _MainTex ("Main Tex", 2D) = "white" {}
-        _Diffuse ("Diffuse", Color) = (1,1,1,1)
-        _Specular ("Specular", Color) = (1,1,1,1)
-        _Gloss ("Gloss", Range(8.0, 256)) = 20
+       _Diffuse ("Diffuse", Color) = (1,1,1,1)
+       _Specular ("Specular", Color) = (1,1,1,1)
+       _Gloss ("Gloss", Range(8.0, 256)) = 20
     }
     SubShader
     {
@@ -24,8 +23,6 @@ Shader "ShaderNotes/Texture/S_SingleTexture"
             #include "UnityCG.cginc"
             #include "Lighting.cginc"
 
-            sampler2D _MainTex;
-            fixed4 _MainTex_ST;
             fixed4 _Diffuse;
             fixed4 _Specular;
             float _Gloss;
@@ -34,7 +31,6 @@ Shader "ShaderNotes/Texture/S_SingleTexture"
             {
                 float4 vertex : POSITION;
                 float3 normal : NORMAL;
-                float4 texcoord : TEXCOORD0;
             };
 
             struct v2f
@@ -42,7 +38,6 @@ Shader "ShaderNotes/Texture/S_SingleTexture"
                 float4 pos : SV_POSITION;
                 float3 worldNormal : TEXCOORD0;
                 float3 worldPos : TEXCOORD1;
-                float2 uv : TEXCOORD2;
             };
 
 
@@ -52,34 +47,28 @@ Shader "ShaderNotes/Texture/S_SingleTexture"
                 // Transform the vertex from object space to projection space
                 o.pos = UnityObjectToClipPos(v.vertex);
                 // Transform the normal from object space to world space 
-                o.worldNormal = UnityObjectToWorldNormal(v.normal);
+                o.worldNormal = mul(v.normal, (float3x3)unity_WorldToObject);
                 // Transform the vertex from object space to world space
                 o.worldPos = mul(unity_WorldToObject, v.vertex).xyz;
-                // get the uv
-                o.uv = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
-                // or using the built-in function 
-                // o.uv =  TRANSFORM_TEX(v.texcoord, _MainTex);
                 return o;
             }
 
             fixed4 frag (v2f i) : SV_Target
             {
+                // Get ambient term
+                fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyz;
                 // normalize the world normal 
                 fixed3 worldNormal = normalize(i.worldNormal);
                 // Get the light direction in world space
-                fixed3 worldLightDir = normalize(UnityWorldSpaceLightDir(i.worldPos));
-                // Use the texture to sample the diffuse color
-                fixed3 albedo = tex2D(_MainTex, i.uv).rgb * _Diffuse;
-                // Get ambient term
-                fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyz;
-                // compute diffuse term 
-                fixed3 diffuse = _LightColor0.rgb * albedo * max(0, dot(worldNormal, worldLightDir));
+                fixed3 worldLightDir = normalize(_WorldSpaceLightPos0.xyz);
+                // compute diffuse term
+                fixed3 diffuse = _LightColor0.rgb * _Diffuse.rgb * saturate(dot(worldNormal, worldLightDir));
+                // Get the reflect direction in world space
+                fixed3 reflectDir = normalize(reflect(_WorldSpaceCameraPos.xyz, i.worldNormal.xyz));
                 // Get the view direction in world space
-                fixed3 viewDir = normalize(UnityWorldSpaceViewDir(i.worldPos));
-                // get the half direction in world space
-                fixed3 halfDir = normalize(worldLightDir + viewDir);
+                fixed3 viewDir = normalize(_WorldSpaceCameraPos.xyz - i.worldPos.xyz);
                 // compute specular term
-                fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(max(0, dot(worldNormal, halfDir)), _Gloss);
+                fixed3 specular = _LightColor0.rgb * _Specular.rgb * pow(saturate(dot(reflectDir, viewDir)), _Gloss);
 
                 float3 color = ambient + diffuse + specular;
 

@@ -1,6 +1,6 @@
-// Half Lambert Mode
+// Lambert Mode
 
-Shader "ShaderNotes/LightMode/S_BaseFragmentHalf"
+Shader "ShaderNotes/LightMode/BaseVertex"
 {
     Properties
     {
@@ -30,7 +30,7 @@ Shader "ShaderNotes/LightMode/S_BaseFragmentHalf"
             struct v2f
             {
                 float4 pos : SV_POSITION;
-                float3 worldNormal : TEXCOORD0;
+                fixed3 color : COLOR;
             };
 
 
@@ -39,27 +39,24 @@ Shader "ShaderNotes/LightMode/S_BaseFragmentHalf"
                 v2f o;
                 // Transform the vertex from object space to projection space
                 o.pos = UnityObjectToClipPos(v.vertex);
+                // Get ambient term
+                fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyz;
                 // Transform the normal from object space to world space
-                o.worldNormal = mul(v.normal, (float3x3)unity_WorldToObject);
+                fixed3 worldNormal = normalize(mul(v.normal, (float3x3)unity_WorldToObject));
+                // Get the light direction in world space
+                fixed3 worldLightDir = normalize(_WorldSpaceLightPos0.xyz);
+                // compute diffuse term
+                fixed3 diffuse = _LightColor0.rgb * _Diffuse.rgb * saturate(dot(worldNormal, worldLightDir));
+
+                o.color = ambient + diffuse;
+
                 return o;
             }
 
             fixed4 frag (v2f i) : SV_Target
             {
 
-                // Get ambient term
-                fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyz;
-                // Get the normal in world space
-                fixed3 worldNormal = normalize(i.worldNormal);
-                // Get the light direction in world space
-                fixed3 worldLightDir = normalize(_WorldSpaceLightPos0.xyz);
-                // compute diffuse term
-                fixed3 diffuse = _LightColor0.rgb * _Diffuse.rgb * ( 0.5 * saturate(dot(worldNormal, worldLightDir)) + 0.5);
-
-                fixed3 color = ambient + diffuse;
-
-
-                return fixed4(color, 1.0);
+                return fixed4(i.color, 1.0);
             }
 
 
