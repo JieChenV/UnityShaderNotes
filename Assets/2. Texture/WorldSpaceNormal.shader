@@ -1,6 +1,6 @@
 // Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
 
-// map normal in tangent space
+// map normal in world space
 
 
 Shader "ShaderNotes/Texture/WorldSpaceNormal"
