@@ -1,4 +1,4 @@
-// Phong Mode
+// Blinn-Phong Mode
 
 
 Shader "ShaderNotes/LightMode/SpecularFragmentBlinn"
