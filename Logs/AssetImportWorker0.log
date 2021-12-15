@@ -22,100 +22,100 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57146
+59203
 Successfully changed project path to: /Users/jiechen/Documents/Unity/UnityShaderNotes
 /Users/jiechen/Documents/Unity/UnityShaderNotes
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 30.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 30.37 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.24f1 (79c78de19888)
 [Subsystems] Discovering subsystems at path /Applications/2020.3.24f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/jiechen/Documents/Unity/UnityShaderNotes/Assets
 GfxDevice: creating device client; threaded=0
-2021-12-13 21:39:12.034 Unity[63943:4320151] CB342CK preferred device: Intel(R) UHD Graphics 630 (low power)
-2021-12-13 21:39:12.034 Unity[63943:4320151] Metal devices available: 1
-2021-12-13 21:39:12.034 Unity[63943:4320151] 0: Intel(R) UHD Graphics 630 (low power)
-2021-12-13 21:39:12.034 Unity[63943:4320151] Using device Intel(R) UHD Graphics 630 (low power)
+2021-12-14 19:40:52.645 Unity[65405:4413934] CB342CK preferred device: Intel(R) UHD Graphics 630 (low power)
+2021-12-14 19:40:52.645 Unity[65405:4413934] Metal devices available: 1
+2021-12-14 19:40:52.645 Unity[65405:4413934] 0: Intel(R) UHD Graphics 630 (low power)
+2021-12-14 19:40:52.645 Unity[65405:4413934] Using device Intel(R) UHD Graphics 630 (low power)
 Initializing Metal device caps: Intel(R) UHD Graphics 630
 Initialize mono
 Mono path[0] = '/Applications/2020.3.24f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/2020.3.24f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Applications/2020.3.24f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56943
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56405
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/2020.3.24f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.002470 seconds.
+Registered in 0.000483 seconds.
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 31.44 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 30.98 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.622 seconds
+- Completed reload, in  0.604 seconds
 Domain Reload Profiling:
-	ReloadAssembly (622ms)
-		BeginReloadAssembly (38ms)
+	ReloadAssembly (604ms)
+		BeginReloadAssembly (36ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (509ms)
-			LoadAssemblies (38ms)
+		EndReloadAssembly (495ms)
+			LoadAssemblies (35ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (183ms)
+			SetupTypeCache (177ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (39ms)
-			SetupLoadedEditorAssemblies (199ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (195ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (31ms)
-				BeforeProcessingInitializeOnLoad (32ms)
-				ProcessInitializeOnLoadAttributes (101ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
+				BeforeProcessingInitializeOnLoad (27ms)
+				ProcessInitializeOnLoadAttributes (103ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007340 seconds.
+Registered in 0.001731 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.080 seconds
+- Completed reload, in  1.065 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1081ms)
-		BeginReloadAssembly (145ms)
+	ReloadAssembly (1066ms)
+		BeginReloadAssembly (143ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (870ms)
-			LoadAssemblies (85ms)
+			CreateAndSetChildDomain (23ms)
+		EndReloadAssembly (861ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (317ms)
+			SetupTypeCache (320ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (303ms)
+			SetupLoadedEditorAssemblies (301ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (70ms)
+				BeforeProcessingInitializeOnLoad (73ms)
 				ProcessInitializeOnLoadAttributes (213ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Validating Project structure ... 0.000586 seconds.
+Validating Project structure ... 0.000846 seconds.
 Shader import version has changed; will reimport all shaders...
-Upgrading shader files ...0.008336 seconds.
+Upgrading shader files ...0.007153 seconds.
 Application.AssetDatabase Initial Script Refresh Start
 RefreshInfo: InitialScriptRefreshV2(NoUpdateAssetOptions) scanfilter:  ... 1 filters
 RefreshProfiler: Total: 0.000ms
@@ -125,20 +125,20 @@ Application.AssetDatabase.Refresh End
 RefreshInfo: StopAssetImportingV2(ForceSynchronousImport) scanfilter: 
 RefreshProfiler: Total: 0.000ms
 Launching external process: /Applications/2020.3.24f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
 Initializing Unity extensions:
-2021-12-13 21:39:15.194 Unity[63943:4320151] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000016e9c70 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
-2021-12-13 21:39:15.198 Unity[63943:4320151] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000016c1ff0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2021-12-14 19:40:55.024 Unity[65405:4413934] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000017dee60 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
+2021-12-14 19:40:55.027 Unity[65405:4413934] NSEventModifierFlagFunction specified to -setKeyEquivalentModifierMask: for item <NSMenuItem: 0x6000017882a0 Font Asset, ke='Command-F12'>, but is only supported for system-provided menu items; will not be used
 ========================================================================
 Worker process is ready to serve import requests
-Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1515 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 198.8 MB.
-System memory in use after: 198.0 MB.
+Unloading 1516 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 199.5 MB.
+System memory in use after: 198.7 MB.
 
-Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 1990.
-Total: 3.215818 ms (FindLiveObjects: 0.157359 ms CreateObjectMapping: 0.046571 ms MarkObjects: 2.529701 ms  DeleteObjects: 0.481481 ms)
+Unloading 80 unused Assets to reduce memory usage. Loaded Objects now: 1991.
+Total: 2.923025 ms (FindLiveObjects: 0.149195 ms CreateObjectMapping: 0.042270 ms MarkObjects: 2.263311 ms  DeleteObjects: 0.467456 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -152,81 +152,325 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/LightSource
-  artifactKey: Guid(6396c4f15b18f41aa86461c185a43468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/LightSource using Guid(6396c4f15b18f41aa86461c185a43468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4ae8c82b81c8c01c51b9b9a3dc835a') in 0.004481 seconds 
-  Import took 0.007116 seconds .
+  path: Assets/4. MultiLightSource/CastAndRecieveShadow.unity
+  artifactKey: Guid(73a2ca5d494364f068e14d23e729d25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/CastAndRecieveShadow.unity using Guid(73a2ca5d494364f068e14d23e729d25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c752c3d81da3a4330347e5ec9fd0ef64') in 0.010901 seconds 
+  Import took 0.013038 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.429508 seconds.
-  path: Assets/4. LightSource
-  artifactKey: Guid(6396c4f15b18f41aa86461c185a43468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4. LightSource using Guid(6396c4f15b18f41aa86461c185a43468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a7cf3f4f3c31531634da7ecf3ea212') in 0.000984 seconds 
-  Import took 0.004277 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.097570 seconds.
-  path: Assets/4. LightSource/LightSource.unity
-  artifactKey: Guid(4076a24de67d24c2284defefa64e799b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4. LightSource/LightSource.unity using Guid(4076a24de67d24c2284defefa64e799b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ec4f87d09e057289402b63f62aff324') in 0.010227 seconds 
-  Import took 0.013281 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.243132 seconds.
-  path: Assets/4. MultiLightSource
-  artifactKey: Guid(6396c4f15b18f41aa86461c185a43468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4. MultiLightSource using Guid(6396c4f15b18f41aa86461c185a43468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '159ad22d5f07af45597ac2ac0062ebc8') in 0.000856 seconds 
-  Import took 0.003515 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.611716 seconds.
-  path: Assets/4. MultiLightSource/MultiLightSource.unity
-  artifactKey: Guid(4076a24de67d24c2284defefa64e799b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4. MultiLightSource/MultiLightSource.unity using Guid(4076a24de67d24c2284defefa64e799b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c479f05eef91ea2f537c7e315c97fb65') in 0.001251 seconds 
-  Import took 0.004092 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 17.987849 seconds.
+  Time since last request: 2.093043 seconds.
   path: Assets/4. MultiLightSource/MultiLightSource.shader
   artifactKey: Guid(e656681b68f7b4d77bac3ef6bc2494b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4. MultiLightSource/MultiLightSource.shader using Guid(e656681b68f7b4d77bac3ef6bc2494b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8588c574e11033f15cabcac51a941108') in 0.706629 seconds 
-  Import took 0.711980 seconds .
+Start importing Assets/4. MultiLightSource/MultiLightSource.shader using Guid(e656681b68f7b4d77bac3ef6bc2494b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77c0c34a369b728c79f89dfe68a514d1') in 0.717471 seconds 
+  Import took 0.721913 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 40.570903 seconds.
+  Time since last request: 3.195971 seconds.
+  path: Assets/4. MultiLightSource/MultiLightSource 1.shader
+  artifactKey: Guid(f45e58d6984ef4b05aaedca00379f0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/MultiLightSource 1.shader using Guid(f45e58d6984ef4b05aaedca00379f0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fb61ddbabfa48c9306054869a784c20') in 0.006275 seconds 
+  Import took 0.008981 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.273837 seconds.
+  path: Assets/4. MultiLightSource/RecieveShadow.shader
+  artifactKey: Guid(f45e58d6984ef4b05aaedca00379f0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/RecieveShadow.shader using Guid(f45e58d6984ef4b05aaedca00379f0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7dd01e67d508702b077b54f56bc3dfc') in 0.003184 seconds 
+  Import took 0.007013 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 539.485819 seconds.
+  path: Assets/4. MultiLightSource/RecieveShadow.shader
+  artifactKey: Guid(f45e58d6984ef4b05aaedca00379f0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/RecieveShadow.shader using Guid(f45e58d6984ef4b05aaedca00379f0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e339705532d57a99e1d60588120721e3') in 0.003578 seconds 
+  Import took 0.006871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.952434 seconds.
+  path: Assets/4. MultiLightSource/MultiLightSource.unity
+  artifactKey: Guid(4076a24de67d24c2284defefa64e799b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/MultiLightSource.unity using Guid(4076a24de67d24c2284defefa64e799b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df8ad971a2fa9078a13f46dfe30debe6') in 0.001329 seconds 
+  Import took 0.005771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 194.947753 seconds.
+  path: Assets/4. MultiLightSource/ShaRecieveShadow.mat
+  artifactKey: Guid(6223ba6dd6389419f98c0d82c0bd85a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/ShaRecieveShadow.mat using Guid(6223ba6dd6389419f98c0d82c0bd85a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in 'ShaderNotes/LightMode/RecieveShadow': undeclared identifier 'shadow' at line 89 (on metal)
+
+Compiling Vertex program with DIRECTIONAL
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADER_API_GLES30 SHADOWS_SCREEN SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON
+Shader error in 'ShaderNotes/LightMode/RecieveShadow': undeclared identifier 'shadow' at line 89 (on metal)
+
+Compiling Vertex program with DIRECTIONAL
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADER_API_GLES30 SHADOWS_SCREEN SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON
+ -> (artifact id: 'f7b3933175d86eab2c1744aa8252efdb') in 0.187870 seconds 
+  Import took 0.194438 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.857457 seconds.
+  path: Assets/4. MultiLightSource/RecieveShadow.mat
+  artifactKey: Guid(6223ba6dd6389419f98c0d82c0bd85a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/RecieveShadow.mat using Guid(6223ba6dd6389419f98c0d82c0bd85a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader error in 'ShaderNotes/LightMode/RecieveShadow': undeclared identifier 'shadow' at line 89 (on metal)
+
+Compiling Vertex program with DIRECTIONAL
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADER_API_GLES30 SHADOWS_SCREEN SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON
+Shader error in 'ShaderNotes/LightMode/RecieveShadow': undeclared identifier 'shadow' at line 89 (on metal)
+
+Compiling Vertex program with DIRECTIONAL
+Platform defines: SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_ENABLE_DETAIL_NORMALMAP UNITY_ENABLE_REFLECTION_BUFFERS UNITY_LIGHTMAP_FULL_HDR UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BLENDING UNITY_SPECCUBE_BOX_PROJECTION UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS
+Disabled keywords: DIRLIGHTMAP_COMBINED DYNAMICLIGHTMAP_ON LIGHTMAP_ON LIGHTMAP_SHADOW_MIXING LIGHTPROBE_SH SHADER_API_GLES30 SHADOWS_SCREEN SHADOWS_SHADOWMASK UNITY_ASTC_NORMALMAP_ENCODING UNITY_ENABLE_NATIVE_SHADOW_LOOKUPS UNITY_HALF_PRECISION_FRAGMENT_SHADER_REGISTERS UNITY_HARDWARE_TIER1 UNITY_HARDWARE_TIER2 UNITY_HARDWARE_TIER3 UNITY_LIGHTMAP_DLDR_ENCODING UNITY_LIGHTMAP_RGBM_ENCODING UNITY_METAL_SHADOWS_USE_POINT_FILTERING UNITY_NO_DXT5nm UNITY_NO_FULL_STANDARD_SHADER UNITY_NO_SCREENSPACE_SHADOWS UNITY_PBS_USE_BRDF2 UNITY_PBS_USE_BRDF3 UNITY_PRETRANSFORM_TO_DISPLAY_ORIENTATION UNITY_VIRTUAL_TEXTURING VERTEXLIGHT_ON
+ -> (artifact id: '642eaf7dd42452b11c7b661bad8a4024') in 0.040515 seconds 
+  Import took 0.044574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 692.542999 seconds.
+  path: Assets/4. MultiLightSource/RecieveShadow.mat
+  artifactKey: Guid(6223ba6dd6389419f98c0d82c0bd85a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/RecieveShadow.mat using Guid(6223ba6dd6389419f98c0d82c0bd85a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5f794662431f0faf4fbc78e3058573') in 0.026254 seconds 
+  Import took 0.030708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 799.444025 seconds.
+  path: Assets/4. MultiLightSource/CastAndRecieveShadow.unity
+  artifactKey: Guid(73a2ca5d494364f068e14d23e729d25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/CastAndRecieveShadow.unity using Guid(73a2ca5d494364f068e14d23e729d25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd119b42f081f66fa800de65be05bd5') in 0.001218 seconds 
+  Import took 0.004905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.218850 seconds.
+  path: Assets/4. MultiLightSource/CastAndRecieveShadow 1.unity
+  artifactKey: Guid(30819aa95541a4b659532a72edf035dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/CastAndRecieveShadow 1.unity using Guid(30819aa95541a4b659532a72edf035dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85bd253a4ed9cce4242863c7e977105e') in 0.001995 seconds 
+  Import took 0.006294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.923334 seconds.
+  path: Assets/4. MultiLightSource/AttenuationAndShadowUsingBuiltInFunc.unity
+  artifactKey: Guid(30819aa95541a4b659532a72edf035dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AttenuationAndShadowUsingBuiltInFunc.unity using Guid(30819aa95541a4b659532a72edf035dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78925e998d00f3d1800520fca1c2a2c1') in 0.002199 seconds 
+  Import took 0.006393 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.611862 seconds.
+  path: Assets/4. MultiLightSource/RecieveShadow.shader
+  artifactKey: Guid(f45e58d6984ef4b05aaedca00379f0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/RecieveShadow.shader using Guid(f45e58d6984ef4b05aaedca00379f0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998faf6eef0d7b83fbcd0a0527cc06b0') in 0.007424 seconds 
+  Import took 0.012049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.369684 seconds.
+  path: Assets/4. MultiLightSource/MultiLightSource 1.shader
+  artifactKey: Guid(dd5144b95194e4796853c5b10187f63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/MultiLightSource 1.shader using Guid(dd5144b95194e4796853c5b10187f63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a847c24bd55e624609b22ca0451cc76') in 0.005788 seconds 
+  Import took 0.011574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.679131 seconds.
+  path: Assets/4. MultiLightSource/AttenAndShadowBuildIn.shader
+  artifactKey: Guid(dd5144b95194e4796853c5b10187f63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AttenAndShadowBuildIn.shader using Guid(dd5144b95194e4796853c5b10187f63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb39d76e09fac0266b23634f1d1ee7c6') in 0.006538 seconds 
+  Import took 0.010417 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 458.812039 seconds.
+  path: Assets/4. MultiLightSource/AttenAndShadowBuildIn.shader
+  artifactKey: Guid(dd5144b95194e4796853c5b10187f63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AttenAndShadowBuildIn.shader using Guid(dd5144b95194e4796853c5b10187f63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '614a25271de82b0f46f98c0b18c0a2d7') in 0.009528 seconds 
+  Import took 0.012210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 129.534139 seconds.
+  path: Assets/4. MultiLightSource/AttenAndShadowBuildIn.shader
+  artifactKey: Guid(dd5144b95194e4796853c5b10187f63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AttenAndShadowBuildIn.shader using Guid(dd5144b95194e4796853c5b10187f63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5421424309e1b3da932e59c635b79fe3') in 0.007605 seconds 
+  Import took 0.012378 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.424549 seconds.
+  path: Assets/4. MultiLightSource/AttenAndShadowBuildIn.mat
+  artifactKey: Guid(742c45be914184153a68576784c154f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AttenAndShadowBuildIn.mat using Guid(742c45be914184153a68576784c154f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3907bb987769c273c0feba4b1d32c5') in 0.063633 seconds 
+  Import took 0.067475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 79.529993 seconds.
+  path: Assets/4. MultiLightSource/AttenAndShadowBuildIn.mat
+  artifactKey: Guid(742c45be914184153a68576784c154f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AttenAndShadowBuildIn.mat using Guid(742c45be914184153a68576784c154f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6420cf7ac285d0ccde3aaf9a149e7d7') in 0.027152 seconds 
+  Import took 0.030575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.633797 seconds.
+  path: Assets/4. MultiLightSource/AttenuationAndShadowUsingBuiltInFunc.unity
+  artifactKey: Guid(30819aa95541a4b659532a72edf035dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AttenuationAndShadowUsingBuiltInFunc.unity using Guid(30819aa95541a4b659532a72edf035dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02f5fba3d0450663487bfc69305ce624') in 0.002736 seconds 
+  Import took 0.006277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 149.316179 seconds.
+  path: Assets/4. MultiLightSource/AttenAndShadowBuildIn.shader
+  artifactKey: Guid(dd5144b95194e4796853c5b10187f63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AttenAndShadowBuildIn.shader using Guid(dd5144b95194e4796853c5b10187f63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afb8c08e0517189ce3f2b3e28c1fb407') in 0.007495 seconds 
+  Import took 0.011945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 233.115637 seconds.
+  path: Assets/4. MultiLightSource/AttenAndShadowBuildIn.mat
+  artifactKey: Guid(742c45be914184153a68576784c154f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AttenAndShadowBuildIn.mat using Guid(742c45be914184153a68576784c154f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b14cb18124a6810c7484671fff6e83') in 0.055774 seconds 
+  Import took 0.058794 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
   path: Assets/4. MultiLightSource/MultiLightSource.mat
   artifactKey: Guid(0225affa47f6a4640aca0e4221292e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4. MultiLightSource/MultiLightSource.mat using Guid(0225affa47f6a4640aca0e4221292e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30187492bf53c1c0d0fd7929f2d1c355') in 0.167430 seconds 
-  Import took 0.175148 seconds .
+Start importing Assets/4. MultiLightSource/MultiLightSource.mat using Guid(0225affa47f6a4640aca0e4221292e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eee661133d4e4ec876b6c56b7ab3aa67') in 0.028638 seconds 
+  Import took 0.031715 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 947.295133 seconds.
-  path: Assets/1. Base Lighting Mode/Specular/SpecularFragmentBlinn.shader
-  artifactKey: Guid(5b4c73db65d424a0ab6ed98c971a0cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/1. Base Lighting Mode/Specular/SpecularFragmentBlinn.shader using Guid(5b4c73db65d424a0ab6ed98c971a0cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed59f6637c1421a58adf84d4a4c56f4') in 0.003910 seconds 
-  Import took 0.006866 seconds .
+  Time since last request: 2167.263893 seconds.
+  path: Assets/4. MultiLightSource/AttenuationAndShadowUsingBuiltInFunc 1.unity
+  artifactKey: Guid(d7d6ce00de8db4925956e08931c36fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AttenuationAndShadowUsingBuiltInFunc 1.unity using Guid(d7d6ce00de8db4925956e08931c36fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '946a0de4da9d5a9b4af9578c196bb4a5') in 0.002122 seconds 
+  Import took 0.006452 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2550.743817 seconds.
-  path: Assets/4. MultiLightSource/MultiLightSource.mat
-  artifactKey: Guid(0225affa47f6a4640aca0e4221292e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4. MultiLightSource/MultiLightSource.mat using Guid(0225affa47f6a4640aca0e4221292e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4edd51be62405c982befc1f508846425') in 0.059260 seconds 
-  Import took 0.062243 seconds .
+  Time since last request: 16.197530 seconds.
+  path: Assets/4. MultiLightSource/TransparentShadows.unity
+  artifactKey: Guid(d7d6ce00de8db4925956e08931c36fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/TransparentShadows.unity using Guid(d7d6ce00de8db4925956e08931c36fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad7c63e2d399ba13eedeb683a9d6762d') in 0.001894 seconds 
+  Import took 0.007796 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 84.138364 seconds.
-  path: Assets/4. MultiLightSource/MultiLightSource.mat
-  artifactKey: Guid(0225affa47f6a4640aca0e4221292e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/4. MultiLightSource/MultiLightSource.mat using Guid(0225affa47f6a4640aca0e4221292e9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bba547a00322374b3e30ddf6cb931ea') in 0.016337 seconds 
-  Import took 0.019428 seconds .
+  Time since last request: 11.246152 seconds.
+  path: Assets/3. Transparent/AlphaTest.shader
+  artifactKey: Guid(5be7967c32d284f81a6c35b4ca0ecf0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Transparent/AlphaTest.shader using Guid(5be7967c32d284f81a6c35b4ca0ecf0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58aaeca786567cab0b9cd0aecab83eda') in 0.004784 seconds 
+  Import took 0.009005 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.058638 seconds.
+  path: Assets/3. Transparent/AlphaTest 1.shader
+  artifactKey: Guid(34e6038db1dca4b32b824a9f47629be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3. Transparent/AlphaTest 1.shader using Guid(34e6038db1dca4b32b824a9f47629be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efafe1ebff240f8567c08b09f56c7695') in 0.005606 seconds 
+  Import took 0.010233 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.069129 seconds.
+  path: Assets/4. MultiLightSource/AlphaTestShadows.shader
+  artifactKey: Guid(34e6038db1dca4b32b824a9f47629be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AlphaTestShadows.shader using Guid(34e6038db1dca4b32b824a9f47629be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97839583cb853bee31ba48c34934ac87') in 0.005667 seconds 
+  Import took 0.009026 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 132.655959 seconds.
+  path: Assets/4. MultiLightSource/AlphaTestShadows.shader
+  artifactKey: Guid(34e6038db1dca4b32b824a9f47629be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AlphaTestShadows.shader using Guid(34e6038db1dca4b32b824a9f47629be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2001e3a32b725bf25cf5760c6a252fe7') in 0.006263 seconds 
+  Import took 0.008708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.369468 seconds.
+  path: Assets/4. MultiLightSource/AlphaTestShadows.mat
+  artifactKey: Guid(ae118774d5739412f9d1a136ac247e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AlphaTestShadows.mat using Guid(ae118774d5739412f9d1a136ac247e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca1789fc06d1c1044535667db0a2c1f') in 0.078714 seconds 
+  Import took 0.081655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 295.805854 seconds.
+  path: Assets/4. MultiLightSource/AlphaTestShadows.shader
+  artifactKey: Guid(34e6038db1dca4b32b824a9f47629be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AlphaTestShadows.shader using Guid(34e6038db1dca4b32b824a9f47629be7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df7326033dcbff1f06c31a53a375cc4f') in 0.006391 seconds 
+  Import took 0.009844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.544408 seconds.
+  path: Assets/4. MultiLightSource/AlphaTestShadows.mat
+  artifactKey: Guid(ae118774d5739412f9d1a136ac247e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AlphaTestShadows.mat using Guid(ae118774d5739412f9d1a136ac247e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25ad1c6a3b074b1afbac8cdfa2f3e6a8') in 0.059967 seconds 
+  Import took 0.062372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.052381 seconds.
+  path: Assets/4. MultiLightSource/TransparentShadows.unity
+  artifactKey: Guid(d7d6ce00de8db4925956e08931c36fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/TransparentShadows.unity using Guid(d7d6ce00de8db4925956e08931c36fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '015c9360cc98c057413d988cabbdb2ef') in 0.002059 seconds 
+  Import took 0.004390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.046404 seconds.
+  path: Assets/4. MultiLightSource/AlphaTestShadows.unity
+  artifactKey: Guid(d7d6ce00de8db4925956e08931c36fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AlphaTestShadows.unity using Guid(d7d6ce00de8db4925956e08931c36fc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658ebf7abd8082e02affb6fd27517928') in 0.001425 seconds 
+  Import took 0.006358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 283.424543 seconds.
+  path: Assets/4. MultiLightSource/AlphaTestShadows.mat
+  artifactKey: Guid(ae118774d5739412f9d1a136ac247e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AlphaTestShadows.mat using Guid(ae118774d5739412f9d1a136ac247e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07b52e594f4074affc90f49af2e5a9de') in 0.029168 seconds 
+  Import took 0.032673 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 969.227864 seconds.
+  path: Assets/4. MultiLightSource/AlphaTestShadows.mat
+  artifactKey: Guid(ae118774d5739412f9d1a136ac247e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. MultiLightSource/AlphaTestShadows.mat using Guid(ae118774d5739412f9d1a136ac247e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a611d0db3faa4915b18d4a9de5bda0e') in 0.067461 seconds 
+  Import took 0.070517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1704.038409 seconds.
+  path: Assets/4. LightAndShadows/RecieveShadow.shader
+  artifactKey: Guid(f45e58d6984ef4b05aaedca00379f0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. LightAndShadows/RecieveShadow.shader using Guid(f45e58d6984ef4b05aaedca00379f0d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab51895a149ec832c69d88d3e307639e') in 0.008505 seconds 
+  Import took 0.011913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.930672 seconds.
+  path: Assets/4. LightAndShadows/RecieveShadow.unity
+  artifactKey: Guid(73a2ca5d494364f068e14d23e729d25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/4. LightAndShadows/RecieveShadow.unity using Guid(73a2ca5d494364f068e14d23e729d25f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1350b514f8fa2633b27b7bcce26aa3be') in 0.002991 seconds 
+  Import took 0.007234 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
