@@ -3,7 +3,7 @@ Shader "ShaderNotes/AnimateTexture/MovingBackground"
     Properties
     {
         _Color ("Color Tint", Color) = (1,1,1,1)
-        _MainTex (" Base Layer (RGB)", 2D) = "white" {}
+        _MainTex ("Base Layer (RGB)", 2D) = "white" {}
         _DetailTex ("2nd Layer (RGB)", 2D) = "white" {}
         _ScrollX ("Base Layer Scroll Speed", float) = 1.0
         _Scroll2X ("2nd Layer Scroll Speed", float) = 1.0
