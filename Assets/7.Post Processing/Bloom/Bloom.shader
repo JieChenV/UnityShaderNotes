@@ -1,4 +1,4 @@
-// Gaussian Blur
+// Bloom
 
 Shader "ShaderNotes/PostProcess/Bloom"
 {
