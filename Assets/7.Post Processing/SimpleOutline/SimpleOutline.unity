@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OutlineShader: {fileID: 4800000, guid: 8fa4b67e254ae43359d2fe946fa87b97, type: 3}
-  OutlineOnly: 0.299
+  OutlineOnly: 0.871
   OutlineColor: {r: 0, g: 0, b: 0, a: 1}
   BackgroundColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!81 &93117807

@@ -47,16 +47,22 @@ public class PostProcessBase : MonoBehaviour
     {
         if (shader == null)
         {
+            Debug.Log("Shader is null");
+
             return null;
         }
 
         if(shader.isSupported && material && material.shader == shader)
         {
+            Debug.Log("long check");
+
             return material;
         }
 
         if (!shader.isSupported)
         {
+            Debug.Log("Shader is not supported");
+
             return null;
         }else
         {
@@ -64,9 +70,12 @@ public class PostProcessBase : MonoBehaviour
             material.hideFlags = HideFlags.DontSave;
             if (material)
             {
+                Debug.Log("Created material successfully");
                 return material;
             }else
             {
+                Debug.Log("Material Created but still null");
+
                 return null;
             }
         }

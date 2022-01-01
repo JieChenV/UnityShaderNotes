@@ -17,7 +17,7 @@ public class FogWithDepthTexture : PostProcessBase
     }
 
     private Camera myCamera;
-    public Camera camera
+    public Camera mainCamera
     {
         get
         {
@@ -35,7 +35,7 @@ public class FogWithDepthTexture : PostProcessBase
         get {
             if (myCameraTransForm == null)
             {
-                myCameraTransForm = camera.transform;
+                myCameraTransForm = mainCamera.transform;
             }
             return myCameraTransForm;
         }
@@ -51,7 +51,7 @@ public class FogWithDepthTexture : PostProcessBase
 
     private void OnEnable()
     {
-        camera.depthTextureMode |= DepthTextureMode.Depth;
+        mainCamera.depthTextureMode |= DepthTextureMode.Depth;
     }
 
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
@@ -60,10 +60,10 @@ public class FogWithDepthTexture : PostProcessBase
         {
             Matrix4x4 frustumCorners = Matrix4x4.identity;
 
-            float fov = camera.fieldOfView;
-            float near = camera.nearClipPlane;
-            float far = camera.farClipPlane;
-            float aspect = camera.aspect;
+            float fov = mainCamera.fieldOfView;
+            float near = mainCamera.nearClipPlane;
+            float far = mainCamera.farClipPlane;
+            float aspect = mainCamera.aspect;
 
             float halfHeight = near * Mathf.Tan(fov * 0.5f * Mathf.Deg2Rad);
             Vector3 toRight = cameraTransform.right * halfHeight * aspect;
@@ -93,7 +93,7 @@ public class FogWithDepthTexture : PostProcessBase
             frustumCorners.SetRow(3, topLeft);
 
             material.SetMatrix("_FrustumCornersRay", frustumCorners);
-            material.SetMatrix("_ViewProjectionInverseMatrix", (camera.projectionMatrix * camera.worldToCameraMatrix).inverse);
+            material.SetMatrix("_ViewProjectionInverseMatrix", (mainCamera.projectionMatrix * mainCamera.worldToCameraMatrix).inverse);
 
             material.SetFloat("_FogDensity", fogDensity);
             material.SetColor("_FogColor", fogColor);
