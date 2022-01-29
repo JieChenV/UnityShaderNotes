@@ -3,7 +3,7 @@
 // Dissolve Effect using Noise
 
 
-Shader "ShaderNotes/Noise//Dissovle"
+Shader "ShaderNotes/Noise/Dissovle"
 {
     Properties
     {
