@@ -39,4 +39,24 @@ This repo contains the Unity Standard shader scripts.
       * Glass Effect
       * Mirror Effect
 * Moving Texture
-* 
+   * Billboard
+   * Image Sequence
+   * Moving Background
+   * Vertex Animation
+* Post Processing
+   * Basic Screen Color Manipulation
+   * Bloom Effect
+   * Gaussian Blur
+   * Motion Blur
+   * Simple Outline
+* Depth Texture
+   * Edge Detection
+   * Depth Fog
+   * Motion Blur
+* Non-Realistic Render
+   * ToonShading
+* Noise
+   * Dissolve
+   * Gloablal Fog
+   * Water Wave
+   
