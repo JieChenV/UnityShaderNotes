@@ -74,11 +74,9 @@ Shader "ShaderNotes/LightMode/SpecularFragment"
 
                 return fixed4(color, 1.0);
             }
-
-
             ENDCG
          }
     }
-            Fallback "Specular"
+    Fallback "Specular"
 
 }

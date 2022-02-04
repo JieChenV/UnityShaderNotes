@@ -1,6 +1,6 @@
 // Half Lambert Mode
 
-Shader "ShaderNotes/LightMode/SaseFragmentHalf"
+Shader "ShaderNotes/LightMode/BaseFragmentHalf"
 {
     Properties
     {
@@ -46,7 +46,6 @@ Shader "ShaderNotes/LightMode/SaseFragmentHalf"
 
             fixed4 frag (v2f i) : SV_Target
             {
-
                 // Get ambient term
                 fixed3 ambient = UNITY_LIGHTMODEL_AMBIENT.xyz;
                 // Get the normal in world space
@@ -58,19 +57,11 @@ Shader "ShaderNotes/LightMode/SaseFragmentHalf"
 
                 fixed3 color = ambient + diffuse;
 
-
                 return fixed4(color, 1.0);
             }
-
-
             ENDCG
-
-
         }
-
-        
     }
-
-            Fallback "Diffuse"
+    Fallback "Diffuse"
 
 }

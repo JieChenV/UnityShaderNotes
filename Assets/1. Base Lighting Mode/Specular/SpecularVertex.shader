@@ -69,16 +69,8 @@ Shader "ShaderNotes/LightMode/SpecularVertex"
 
                 return fixed4(i.color, 1.0);
             }
-
-
             ENDCG
-
-
         }
-
-        
     }
-
-            Fallback "Specular"
-
+    Fallback "Specular"
 }

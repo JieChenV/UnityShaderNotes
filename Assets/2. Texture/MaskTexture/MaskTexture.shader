@@ -66,7 +66,6 @@ Shader "ShaderNotes/Texture/MaskTexture"
                 // get the main texture's uv
                 o.uv.xy = v.texcoord.xy * _MainTex_ST.xy + _MainTex_ST.zw;
 
-
                 // compute the binormal
                 //float3 binormal = cross( normalize(v.normal), normalize(v.tangent.xyz) ) * v.tangent.w;
                 // construct a matrix which transform vectors from object space to tangent space
@@ -117,11 +116,9 @@ Shader "ShaderNotes/Texture/MaskTexture"
 
                 return fixed4(color, 1.0);
             }
-
-
             ENDCG
          }
     }
-            Fallback "Specular"
+    Fallback "Specular"
 
 }

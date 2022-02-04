@@ -58,19 +58,10 @@ Shader "ShaderNotes/LightMode/BaseFragment"
 
                 fixed3 color = ambient + diffuse;
 
-
                 return fixed4(color, 1.0);
             }
-
-
             ENDCG
-
-
         }
-
-        
     }
-
-            Fallback "Diffuse"
-
+    Fallback "Diffuse"
 }

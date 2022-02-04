@@ -55,19 +55,11 @@ Shader "ShaderNotes/LightMode/BaseVertex"
 
             fixed4 frag (v2f i) : SV_Target
             {
-
                 return fixed4(i.color, 1.0);
             }
-
-
             ENDCG
-
-
         }
-
-        
     }
-
-            Fallback "Diffuse"
+    Fallback "Diffuse"
 
 }

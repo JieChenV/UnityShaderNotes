@@ -1,5 +1,3 @@
-// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
-
 // gradient texture in world space
 
 
@@ -83,11 +81,9 @@ Shader "ShaderNotes/Texture/GradientTexture"
 
                 return fixed4(color, 1.0);
             }
-
-
             ENDCG
          }
     }
-            Fallback "Specular"
+    Fallback "Specular"
 
 }
