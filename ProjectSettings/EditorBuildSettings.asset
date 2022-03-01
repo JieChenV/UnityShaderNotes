@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Menu/MainMenu.unity
+    guid: 3172d8383e3404f36b753f89b350b1bd
+  - enabled: 1
+    path: Assets/1. Base Lighting Mode/Base Lighting.unity
+    guid: b18d1f3964669408d8be57f435514d7c
+  - enabled: 1
+    path: Assets/2. Texture/Texture.unity
+    guid: 13e6f1e012954421db6a5dee67cd3ee6
+  - enabled: 1
+    path: Assets/3. Transparent/Transparent.unity
+    guid: e355840c2dc9a40678d363b52b3dd256
   m_configObjects: {}
